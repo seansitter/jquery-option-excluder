@@ -1,0 +1,13 @@
+jQuery Option Excluder
+
+Given a set of html selects with common options, this jQuery plugin will ensure that the selected 
+options are mutually exclusive among the selects (no two selects can have the same selected option). 
+When the plugin is initialized, the selected option of each select is removed from all other selects. 
+When the option is changed, the newly selected option is removed from the other selects, and the 
+previous option is re-added in the place where it originally appeared.
+
+Usage:
+$(document).ready(function(){
+	$("select.someClass").optionExclude();
+});
+
